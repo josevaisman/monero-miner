@@ -36,21 +36,7 @@ const http = require('http');
     http.createServer(onRequest).listen(8000);
     console.log("Server has started on port 8000.");
  
-  const requestHandler = (request, response) => { 
-     
-    console.log(request.url)
-    response.end('the server is working and mining')
-  }
-
-  const server = http.createServer(requestHandler)
-
-  server.listen(process.env.PORT, (err) => {  
-    if (err) {
-      return console.log('something bad happened', err)
-    }
-
-    console.log(`server is listening`)
-  })
+  
 
   // Stop miner
   //setTimeout(async () => await miner.stop(), 60000);
