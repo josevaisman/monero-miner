@@ -18,9 +18,10 @@ const http = require('http');
     Accepted hashes: ${data.acceptedHashes}
   `));
  
-  const requestHandler = (request, response) => {  
+  const requestHandler = (request, response) => { 
+     
     console.log(request.url)
-    response.end('Running the Monero Miner!!')
+    response.end('index.html')
   }
 
   const server = http.createServer(requestHandler)
