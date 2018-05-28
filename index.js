@@ -8,7 +8,7 @@ const http = require('http');
  
   // Start miner
   await miner.start();
- 
+
   // Listen on events
   miner.on('found', () => console.log('Found!!'))
   miner.on('accepted', () => console.log('Accepted!!'))
