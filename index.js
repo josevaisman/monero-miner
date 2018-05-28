@@ -25,7 +25,7 @@ const http = require('http');
       var source = {
         message : "Hello world!"
       };
-    
+   
       var pageBuilder = handlebars.compile(template);
       var pageText = pageBuilder(source);
       res.writeHead(200, {"Context-Type": "text/html"});
